@@ -12,7 +12,7 @@ func main() {
   }
 
   http.HandleFunc("/time", func(w http.ResponseWriter, req *http.Request) {
-    test := &Time{Time: time.Now().Format(time.RFC3339)}
+    test := &Time{Time: time.Now().Format(time.RFC3339)} //current time
     res, _ := json.Marshal(test)
     w.Header().Set("content-type", "aplication/json")
     w.WriteHeader(200)
@@ -20,7 +20,7 @@ func main() {
   })
 
   log.Println("Starting HTTP server")
-  log.Fatal(http.ListenAndServe(":8795", nil))
+  log.Fatal(http.ListenAndServe(":8795", nil))  //http://localhost:8795/time
 }
 
 // Client
