@@ -22,3 +22,13 @@ func main() {
   log.Println("Starting HTTP server")
   log.Fatal(http.ListenAndServe(":8795", nil))
 }
+
+// Client
+/*
+const response = await fetch('http://localhost:8795/time');
+if (response.ok) {
+  const res = await response.text();
+  console.log(JSON.parse(res));
+} else
+  console.error('${respoonse.status}');
+*/
