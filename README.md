@@ -11,3 +11,5 @@ go run server.go
 у форматі RFC3339 в полі time
 
 Виконали: Стеблевець Тетяна @tnsts, Кошолап Вікторія @VictoryKS, Сергієнко Олеся @lesia-s
+
+test
